@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    color: #2B292D;
+    letter-spacing: -0.01em;
+}
+
+/* Reset CSS */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active{
+    outline: none;
+    box-shadow: none;
+}
+
+ol,
+ul,
+li{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.fill-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -.05em;
+    border-style: none;
+    color: #fff;
+    background-color: #3040C4;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fill-button.inverted{
+    color: #3040C4;
+    background-color: #fff;
+}
+
+.fill-button:hover{
+    opacity: 0.5;
+}
+
+section h2{
+    font-size: 34px;
+    line-height: 1.058823529411765‬;
+    font-weight: 700;
+    letter-spacing: -.03%;
+}
+
+.landing-content,
+.curriculum-section,
+.subscription-section
+{
+    height: 100vh;
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.section-category{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+}
+
+.section-title{
+    margin-bottom: 24px;
+    font-size: 34px;
+    line-height: 1.058823529411765‬;
+    letter-spacing: -.03em;
+
+}
+
+/*Landing Section*/
+.landing-section{
+    text-align: center;
+    background-color: #FDDED8;
+}
+.landing-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.landing-title{
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.05em;
+}
+.landing-desc{
+    margin-bottom: 24px;
+}
+
+.landing-section .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing-section .fill-button:first-child{
+    margin-right: 8px;
+}
+
+/*Service Section*/
+.service-section{
+    background-color: #F4F5F7;
+    padding: 80px 0;
+}
+
+.service-section .col-12:first-child{
+    margin-bottom: 40px;
+}
+
+.service-title{
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.363636363636364‬;
+    letter-spacing: -.04em;
+}
+
+/*Program Section*/
+.program-section{
+    margin: 80px 0;
+}
+
+.program-section .row:first-child{
+    margin-bottom: 32px;
+}
+
+.program-section .col-md-4{
+    margin-bottom: 20px;
+}
+
+.program-section .col-md-4:last-child{
+    margin-bottom: 0;
+}
+.program-section .section-category{
+    color: #009B4D;
+}
+
+
+
+.program-item{
+    display: block;
+    padding: 24px 0 32px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.program-item:hover{
+    background-color: #3040C4;
+    box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 13px 18px rgba(0, 0, 0, 0.15);
+}
+.program-item:hover strong{
+    color: #fff;
+}
+.program-item>img{
+    display: block;
+    height: 195px;
+    margin: 0 auto 16px;
+}
+
+.program-item strong{
+    font-size: 18px;
+    line-height: 1.333333333333333;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    transition: color 0.5s ease-in-out;
+}
+
+/*Curriculum Section*/
+.curriculum-section{
+
+}
+
+/*Subscription Section*/
+.subscription-section{
+    background-color: #F2F8FA;
+}
+
+/* >= 768px(Desktop) */
+@media screen and (min-width : 768px){
+    /* Reset CSS */
+    p{
+        font-size: 22px;
+        line-height: 1.454545454545455;
+    }
+
+    .fill-button{
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.555555555555556‬;
+    }
+
+    .section{
+        padding-bottom: 96px;
+    }
+
+    .section-category{
+        margin-bottom: 16px;
+        font-size: 22px;
+        line-height: 1.090909090909091;
+    }
+
+    .section-title{
+        margin-bottom: 32px;
+        font-size: 56px;
+        line-height: 1;
+    }
+
+    /* Landing Section */
+    .landing-content{
+        height: auto;
+        padding: 120px 0;
+    }
+
+    .landing-title{
+        margin-bottom: 32px;
+        font-size: 70px;
+        line-height: 1.028571428571429‬;
+    }
+
+    .landing-desc{
+        margin-bottom: 32px;
+    }
+
+    .landing-section .fill-button:first-child{
+        margin-right: 16px;
+    }
+
+    /* Service Section */
+    .service-title{
+        font-size: 26px;
+        line-height: 1.307692307692308‬;
+    }
+
+    /* Program Section */
+    .program-section{
+        text-align: center;
+    }
+    
+    .program-section .row:first-child{
+        margin-bottom: 72px;
+    }
+
+    .program-item img{
+        margin-bottom: 24px;
+    }
+
+    .program-item strong{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+
+}
+/* Custom Grid System - Fix container width */
+/* max-width가 1200px이 되더라도 container width를 960px로 제한하기 */
+@media screen and (min-width:1200px){
+    .container{
+        width: 960px !important;
+    }
+}
