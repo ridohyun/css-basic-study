@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Noto Sans KR", sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1f2d3d;
+    line-height: 1.4545454545;
+    margin-bottom: 2px;
+  }
+  
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7d858f;
+    line-height: 1.5;
+  }
+  
+  strong {
+    font-size: 22px;
+    color: #2860e1;
+    line-height: 1.0909090909;
+  }
+  
+  strong span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #525d69;
+    line-height: 1.5;
+  }
+  
+  button {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+  }
+  
+  #prev {
+    background-image: url(./assets/icon-backward.svg);
+    position: absolute;
+    z-index: 100;
+    bottom: 106px;
+    left: 7px;
+  }
+  
+  #next {
+    background-image: url(./assets/icon-forward.svg);
+    position: absolute;
+    z-index: 100;
+    bottom: 106px;
+    right: 7px;
+
+  }
+  
+  /* ▼ WHERE YOUR CODE BEGINS */
+  .card{
+    width: 400px;
+  }
+  .card-carousel{
+    width: 100%;
+    background-color: #000;
+    position: relative;
+
+  }
+  .card-carousel>img{
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+.card-content{
+  width: 100%;
+  padding: 12px 0 0 16px;
+}
+.trip-corp{
+  display: block;
+  margin-bottom: 8px;
+
+}
